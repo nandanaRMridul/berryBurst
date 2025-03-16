@@ -32,7 +32,7 @@ body {
 header .navbar-custom {
   display: flex;
   align-items: baseline;
-  background-color: hsla(340, 100%, 97%, 0.9);
+  background-color: hsla(340, 100%, 97%, 0.764);
   border: none;
   width: 96%;
   height: fit-content;
@@ -40,6 +40,8 @@ header .navbar-custom {
   margin-inline: auto;
   z-index: 1;
 }
+
+
 
 header .navbar-custom:hover {
   background-color: hsla(340, 100%, 97%, 0.965);
@@ -57,6 +59,12 @@ header .navbar-custom:hover {
   color: #450920;
   text-shadow: 1.5px 1.5px 3px #e2e2e27a;
   text-transform: uppercase;
+}
+@media screen and (max-width:768px) {
+  .nav-item .nav-link:hover,
+    .link5:hover {
+      transform:none;
+    }
 }
 
 .nav-item .nav-link:hover,
