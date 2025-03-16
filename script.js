@@ -1,6 +1,4 @@
 
-//AOS init
-AOS.init();
 
 //GSAP
 gsap.registerPlugin(ScrollTrigger);
