@@ -47,8 +47,9 @@ let t3 = gsap.timeline({
 });
 
 t3 
-  .from('.flavors', { y: -30, opacity: 0, duration: 1.5 })
-  .from('.carousel-container', { y: 50, opacity: 0, duration: 1, ease: 'slow' })
+  .from('.background-img-flav', { y: -30, opacity: 0, duration: 1.5 })
+  .from('.flavors h2', {y:'10vh', opacity:0, ease: "power3.inOut", duration: 1})
+  .from('.carousel-container', { y: 50, opacity: 0, duration: 0.9, ease: 'slow' })
   
 
 let t4 = gsap.timeline({
@@ -61,7 +62,7 @@ let t4 = gsap.timeline({
 
 t4 
   .from('.features', { y: -30, opacity: 0, duration: 1.5 })
-  .from('.features-content h2', { y: 50, opacity: 0, duration: 1, ease:'slow' })
+  .from('.features-content h2', { y: 50, opacity: 0, duration: 0.8, ease:'slow' })
   .from('.features-content .sec1', { x: -50, opacity: 0, duration: 0.7, ease:'slow' })
   .from('.features-content .sec3', { x: 150, opacity: 0, duration: 0.6, ease: 'slow' })
   .from('.features-content .sec2', { y: 50, opacity: 0, duration: 0.7, ease:'slow' })

@@ -2,12 +2,13 @@ body {
   background-color: #ffeff5;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  cursor: url('img/arrow-cursor\ \(1\).png'), auto;
 }
+
 
 /*  backgroundImg*/
 .background-img {
   height: 100vh;
-  background-color: #A64D79;
   background-image: url('img/heroImage.jpg');
   background-size: cover;
   background-position: center;
@@ -41,8 +42,6 @@ header .navbar-custom {
   z-index: 1;
 }
 
-
-
 header .navbar-custom:hover {
   background-color: hsla(340, 100%, 97%, 0.965);
 }
@@ -60,12 +59,6 @@ header .navbar-custom:hover {
   text-shadow: 1.5px 1.5px 3px #e2e2e27a;
   text-transform: uppercase;
 }
-@media screen and (max-width:768px) {
-  .nav-item .nav-link:hover,
-    .link5:hover {
-      transform:none;
-    }
-}
 
 .nav-item .nav-link:hover,
 .link5:hover {
@@ -76,7 +69,6 @@ header .navbar-custom:hover {
   border: none;
   color: transparent;
 }
-
 
 /* heroSection */
 .hero {
@@ -105,7 +97,7 @@ header .navbar-custom:hover {
 .section-text {
   font-size: 4vw;
   font-weight: 500;
-  color: #e8d8de;
+  color: #f0e0e6;
 }
 
 .fadein-text:hover {
@@ -118,15 +110,17 @@ header .navbar-custom:hover {
   background-color: #450920d2;
   color: white;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 12px 25px;
+  font-weight: 500;
 }
 
 .action-button:hover {
   background-color: #e8d8ded6;
   color: #450920;
   transform: scale(1.1);
+  font-weight: 500;
+  text-shadow: none;
 }
-
 
 
 /* introSection */
@@ -164,7 +158,7 @@ header .navbar-custom:hover {
 }
 
 .introimg1 {
-  width: 5%;
+  width: 6%;
   position: absolute;
   top: -20%;
   left: -5%;
@@ -192,7 +186,7 @@ header .navbar-custom:hover {
 }
 
 .introimg5 {
-  width: 5%;
+  width: 6%;
   position: absolute;
   bottom: 8%;
   right: 5%
@@ -202,7 +196,7 @@ header .navbar-custom:hover {
   width: 7%;
   position: absolute;
   bottom: 35%;
-  right: 1%
+  right: 0%
 }
 
 .introimg7 {
@@ -213,7 +207,7 @@ header .navbar-custom:hover {
 }
 
 .introimg8 {
-  width: 9%;
+  width: 10%;
   position: absolute;
   bottom: 20%;
   right: -8%
@@ -224,14 +218,15 @@ header .navbar-custom:hover {
   background-color: #450920d2;
   color: white;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 12px 25px;
+  font-weight: 500;
 }
 
-.introbtn:hover{
+.introbtn:hover {
   background-color: #fce7ee;
   color: #450920;
   transform: scale(1.1);
-
+  font-weight: 500;
 }
 
 .features-div {
@@ -246,24 +241,36 @@ header .navbar-custom:hover {
 }
 
 
-
 /*flavorsSection*/
 
 .flavors {
-  height: 100%;
+height: fit-content;
   padding: 30px 0;
 }
-.flavors h2{
+
+/*  backgroundImg*/
+.background-img-flav {
+  height: fit-content;
+  background-image: url('img/2.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 26px;
+  box-sizing: border-box;
+}
+
+.flavors h2 {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
   color: #450920;
   text-shadow: 2px 2px 4px #3535353c;
-  margin-bottom:22px;
+  margin-bottom: 22px;
 }
 
-.carousel-container{
-  width: 75%;
+.carousel-container {
+  width: 60%;
   height: auto;
   -webkit-box-shadow: 1px 7px 27px -12px rgba(115, 111, 113, 0.5);
   -moz-box-shadow: 1px 7px 27px -12px rgba(115, 111, 113, 0.5);
@@ -272,51 +279,54 @@ header .navbar-custom:hover {
   border-radius: 50%;
 }
 
-#flavorCarousel, .carousel-container .slide, .slide img{
+#flavorCarousel,
+.carousel-container .slide,
+.slide img {
   width: 100%;
   border: none;
   border-radius: 50%;
 }
-.red-caption{
+
+.red-caption {
   color: #450920;
 }
 
 /* featuresSection */
 
-.features{
+.features {
   background-color: #fff5f9;
   color: black;
   height: 100%;
   padding: 30px 0;
 }
 
-.features-content h2{
+.features-content h2 {
   text-align: center;
-  text-shadow: 2px 2px 4px #35353541;
-  margin:40px auto;
+  text-shadow: 2px 2px 4px #37373732;
+  margin: 40px auto;
 }
 
-.features-content .sub-section img{
+.features-content .sub-section img {
   border: none;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
-.features-content .sub-section h3{
+.features-content .sub-section h3 {
   font-size: 30px;
   padding: 8px 0;
 }
 
-.features-content .sub-section h3 p{
+.features-content .sub-section h3 p {
   text-align: justify;
 }
 
 /* testimonilasSection */
-.testimonials-content{
+.testimonials-content {
   width: 100%;
 }
 
-.testimonial-card{
+.testimonial-card {
   width: 90%;
   height: 100%;
 
@@ -324,6 +334,45 @@ header .navbar-custom:hover {
   background-color: #fff8fb;
   border-radius: 20px;
   -webkit-box-shadow: 1px 7px 27px -12px rgba(115, 111, 113, 0.5);
-    -moz-box-shadow: 1px 7px 27px -12px rgba(115, 111, 113, 0.5);
-    box-shadow: 1px 7px 27px -12px rgba(115, 111, 113, 0.5);
+  -moz-box-shadow: 1px 7px 27px -12px rgba(115, 111, 113, 0.5);
+  box-shadow: 1px 7px 27px -12px rgba(115, 111, 113, 0.5);
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: #98838fad;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #450920;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #450920;
+}
+
+/* footerSection */
+footer{
+  background-color: #e4ccd5;
+  color: black;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+}
+
+
+@media (320px < width <768px) {
+  .intro-content .into-para{
+    font-size: 25px;
+  }
+  .nav-item .nav-link:hover,
+  .link5:hover {
+    transform: scale(1);
+  }
 }

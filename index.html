@@ -15,8 +15,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -101,7 +103,7 @@
   <!-------------->
 
   <!-- flavorsSection-->
-  <section class="flavors container py-5">
+  <section class="flavors background-img-flav container-fluid">
     <h2 class="text-center">Our Delicious Flavors</h2>
     <div class="carousel-container mx-auto">
       <!-- Flavor Carousel -->
@@ -193,49 +195,78 @@
     </div>
   </section>
 
-<!-- testimonialsSection -->
-<section class="testimonials pt-3 pb-5 ps-5 text-center">
-  <h2 class="text-center mb-5 mt-4 pe-4">What Our Customers Are Saying</h2>
-  <div class="row testimonials-content">
-    <div class="col-md-4 text-center mb-4">
-      <div class="testimonial-card mb-4 p-4">
-        <div class="text-center">
-        <img class="rounded-circle mb-3" width="100" src="img/sarahpf.jpg" alt="">
+  <!-- testimonialsSection -->
+  <section class="testimonials pt-3 pb-5 ps-5 text-center">
+    <h2 class="text-center mb-5 mt-4 pe-4">What Our Customers Are Saying</h2>
+    <div class="row testimonials-content">
+      <div class="col-md-4 text-center mb-4">
+        <div class="testimonial-card mb-4 p-4">
+          <div class="text-center">
+            <img class="rounded-circle mb-3" width="100" src="img/sarahpf.jpg" alt="">
+          </div>
+          <p class="review">"Berry Burst has completely changed my breakfast routine! The strawberry spread is so fresh
+            and delicious. I can't get enough!"</p>
+          <p class="font-italic text-center">- Sarah M.</p>
+        </div>
       </div>
-      <p class="review">"Berry Burst has completely changed my breakfast routine! The strawberry spread is so fresh
-              and delicious. I can't get enough!"</p>
-      <p class="font-italic text-center">- Sarah M.</p>
+      <div class="col-md-4 mb-4">
+        <div class="testimonial-card mb-4 p-4">
+          <div class="text-center">
+            <img class="rounded-circle mb-3" width="100" src="img/johnpf.jpg" alt="">
+          </div>
+          <p class="review">"I love that Berry Burst uses real fruit. The blueberry spread is my absolute favorite. It's
+            the perfect balance of sweet and tangy."</p>
+          <p class="font-italic text-center">- John D.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="testimonial-card mb-4 p-4">
+          <div class="text-center">
+            <img class="rounded-circle mb-3" width="100" src="img/emilypf.jpg" alt="">
+          </div>
+          <p class="review">"As a mom, I'm always looking for healthy options for my family. Berry Burst is a winner! My
+            kids love it, and I feel good about giving it to them."</p>
+          <p class="font-italic text-center">- Emily L.</p>
+        </div>
       </div>
     </div>
-    <div class="col-md-4 mb-4">
-      <div class="testimonial-card mb-4 p-4">
-      <div class="text-center">
-        <img class="rounded-circle mb-3" width="100" src="img/johnpf.jpg" alt="">
-      </div>
-      <p class="review">"I love that Berry Burst uses real fruit. The blueberry spread is my absolute favorite. It's
-      the perfect balance of sweet and tangy."</p>
-      <p class="font-italic text-center">- John D.</p>
-    </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="testimonial-card mb-4 p-4">
-      <div class="text-center">
-        <img class="rounded-circle mb-3" width="100" src="img/emilypf.jpg" alt="">
-      </div>
-      <p class="review">"As a mom, I'm always looking for healthy options for my family. Berry Burst is a winner! My
-      kids love it, and I feel good about giving it to them."</p>
-      <p class="font-italic text-center">- Emily L.</p>
-    </div>
-  </div>
-  </div>
-</section>
+  </section>
 
   <!------------------------->
-
-  <footer class="bg-dark text-light py-3 text-center">
-    <p>&copy; 2025 Berry Burst</p>
+  <!--footerSection-->
+  <footer class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0 ">
+          <img src="img/logo1.png" width="250px" class="m-2">
+          <p class="ps-4">Taste the natural goodness of our handcrafted berry spreads.</p>
+        
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0 ps-5 pt-4">
+          <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Flavors</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4 ps-5 pt-4">
+          <h5>Connect With Us</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook" style="color:black;"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter" style="color: black;"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
+            </li>
+          </ul>
+          <p>&copy; 2025 Berry Burst. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
   </footer>
-
+  <!------------------------->
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
