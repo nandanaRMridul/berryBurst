@@ -47,7 +47,7 @@ let t3 = gsap.timeline({
 });
 
 t3 
-  .from('.background-img-flav', { y: -30, opacity: 0, duration: 1.5 })
+  .from('.background-img-flav', { y: -30, opacity: 0, duration: 1 })
   .from('.flavors h2', {y:'10vh', opacity:0, ease: "power3.inOut", duration: 1})
   .from('.carousel-container', { y: 50, opacity: 0, duration: 0.9, ease: 'slow' })
   
